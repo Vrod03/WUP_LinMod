@@ -46,7 +46,7 @@ basicNN <- ggplot(data,aes(y=SIMS,x=ARM))
 basicNN + geom_point() + ggtitle ("SIMS vs ARM") + theme(plot.title = element_text(hjust = 0.5, size=20))
 ```
 
-
+In this scatter plot it's exemplified that the data is showing a simulation of expected arm strength in workers. Disregarding the outliers the majority of the workers had an arm strength level between 50 and 100.
 
 
 ### Numerical results
