@@ -132,20 +132,24 @@ This data shows that the predicted target plot is -0.5361 and 95% of the time th
 #### now add the model fit to our plot for model.2
   
 
+```{r}
+basicGRIP + geom_point() + ggtitle ("SIMS vs GRIP") + theme(plot.title = element_text(hjust = 0.5, size=20))
+geom_smooth(method=lm)
+```
 
 
+the scatter plot above tell us where the best fit line is. This allows us to see which data points are the most accurate in SIMS vs GRIP 
 
 ## Model 3 SIM~ARM+GRIP
 
 
-
-
-
-
 ### Numerical results (cor)
 
-`
-  
+```{r}
+cor(SIMS~ARM+GRIP,data=data)
+```
+
+This data shows us that we have 0.7326 correlation between arms and grip. This correlation gives a higher value than the two variables by themselves from SIMS vs GRIP and SIMS vs ARM. The most accurate model would be one that looks at both Arm and Grip at the same time.
   
   
 ### Inferential  (Build 2-dimentional model.3)
