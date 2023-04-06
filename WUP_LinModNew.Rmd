@@ -97,7 +97,7 @@ basicGRIP <- ggplot(data,aes(y=SIMS,x=GRIP))
 basicGRIP + geom_point() + ggtitle ("SIMS vs GRIP") + theme(plot.title = element_text(hjust = 0.5, size=20))
 ```
 
-
+In this scatter plot it's exemplified that the data is showing a simulation of expected grip strength in workers. Disregarding the outliers the majority of the workers had an arm strength level between 70 and 130.
 
 
 ### Numerical results 
@@ -112,8 +112,12 @@ In this data with SIMS vs. GRIP the value of 0.6398 is smaller than the value gi
 
 ### Inferential  (Build model.2)
   
+```{r}
+model.2 <- lm(SIMS~GRIP,data=data)
+summary.lm(model.2)
+```  
   
-  
+This data tells us that the equation for the best fit line of SIMS = 0.045463 x GRIP -4.809675 . This means that the positive coefficient will have a positive slope staring bottom left hand corner to the top right hand corner.
   
 
 #### predict model.2 at target point
