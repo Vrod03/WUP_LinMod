@@ -60,7 +60,12 @@ This data explains that relationship between SIMS and ARM is the same. The large
 
 ### Inferential  (Build model.1)
 
+```{r}
+model.1 <- lm(SIMS~ARM,data=data)
+summary.lm(model.1)
+```
 
+This is the equation of the line for this data SIMS= 0.054563 x ARM -4.095160. Since we have a positive coefficient the line increases so the plot will move from lower left corner to the up right corner. 
 
 
 #### Predict at target point
