@@ -41,7 +41,6 @@ data <- read.csv(file="https://onlinestatbook.com/case_studies_rvls/physical_str
 ```{r}
 basicNN <- ggplot(data,aes(y=SIMS,x=ARM))
 ```
-
 ```{r}
 basicNN + geom_point() + ggtitle ("SIMS vs ARM") + theme(plot.title = element_text(hjust = 0.5, size=20))
 ```
@@ -89,11 +88,14 @@ This data plot shows the best fit line from the data collected from SIMS vs. ARM
 ## Model 2 SIM~GRIP
 
 
-
-
-
 ### Now add in scatterplot
 
+```{r}
+basicGRIP <- ggplot(data,aes(y=SIMS,x=GRIP)) 
+```
+```{r}
+basicGRIP + geom_point() + ggtitle ("SIMS vs GRIP") + theme(plot.title = element_text(hjust = 0.5, size=20))
+```
 
 
 
