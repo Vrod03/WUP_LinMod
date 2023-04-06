@@ -51,7 +51,11 @@ In this scatter plot it's exemplified that the data is showing a simulation of e
 
 ### Numerical results
 
+```{r}
+cor(SIMS~ARM,data=data)
+```
 
+This data explains that relationship between SIMS and ARM is the same. The larger our number is then the larger the correlation between the 2 factors is. 0.686 is a small number showing that there is little correlation.
 
 
 ### Inferential  (Build model.1)
