@@ -133,8 +133,7 @@ This data shows that the predicted target plot is -0.5361 and 95% of the time th
   
 
 ```{r}
-basicGRIP + geom_point() + ggtitle ("SIMS vs GRIP") + theme(plot.title = element_text(hjust = 0.5, size=20))
-geom_smooth(method=lm)
+basicGRIP + geom_point() + ggtitle ("SIMS vs GRIP") + theme(plot.title = element_text(hjust = 0.5, size=20)) + geom_smooth(method=lm)
 ```
 
 
@@ -154,8 +153,12 @@ This data shows us that we have 0.7326 correlation between arms and grip. This c
   
 ### Inferential  (Build 2-dimentional model.3)
 
+```{r}
+model.3 <- lm(SIMS~ARM+GRIP,data=data)
+summary.lm(model.3)
+``` 
 
-
+This data tells us that the equation of the best fit plane will be SIMS= 0.03731 x ARM + 0.024470 x GRIP -5.433871. 
 
 
 #### predict model.3 at target point
