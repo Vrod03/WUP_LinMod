@@ -33,51 +33,123 @@ data <- read.csv(file="https://onlinestatbook.com/case_studies_rvls/physical_str
 
 ## Model 1 SIM~ARMS
 
+
+
+
 ### scatterplot
+
+```{r}
+basicNN <- ggplot(data,aes(y=SIMS,x=ARM))
+```
+
+```{r}
+basicNN + geom_point() + ggtitle ("SIMS vs ARM") + theme(plot.title = element_text(hjust = 0.5, size=20))
+```
+
+
+
 
 ### Numerical results
 
 
+
+
 ### Inferential  (Build model.1)
+
+
+
 
 #### Predict at target point
 
 
+
+
+
 #### scatterplot with model fit
+  
+  
+  
   
 
 ## Model 2 SIM~GRIP
 
+
+
+
+
 ### Now add in scatterplot
+
+
+
 
 
 ### Numerical results 
 
 
+
+
+
 ### Inferential  (Build model.2)
+  
+  
+  
   
 
 #### predict model.2 at target point
+
+
+
 
 #### now add the model fit to our plot for model.2
   
 
 
+
+
 ## Model 3 SIM~ARM+GRIP
+
+
+
+
+
 
 ### Numerical results (cor)
 
 `
   
+  
+  
 ### Inferential  (Build 2-dimentional model.3)
+
+
+
+
 
 #### predict model.3 at target point
   
 
+
+
+
+
 ## Comparing nested models ANOVA Test
 
+
+
+
+
 ### Model.1 vs Model.3
+
+
+
+
+
 ### Model.2 vs Model.3
+
+
+
+
+
 
 ## Informally compare Model.1 with model.2
 
