@@ -188,7 +188,7 @@ From the data given we can see that model 3 has a higher accuracy compared to mo
 anova(model.2,model.3)
 ```
 
-
+From the data we can see that model 3 is more accurate than model 2. The p value is 0.0000000001495 which is very small explaining that if there was no difference between the two models that would be the chances of getting these results. The difference of the degree of freedom is 1 because model 2 has 145 and model 3 has 144. The RSS for model 2 is 243 and model 3 is 188 which means that the difference is 54 point. Ultimately meaning that model 3 is more accrate.
 
 
 ## Informally compare Model.1 with model.2
