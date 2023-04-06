@@ -102,7 +102,11 @@ basicGRIP + geom_point() + ggtitle ("SIMS vs GRIP") + theme(plot.title = element
 
 ### Numerical results 
 
+```{r}
+cor(SIMS~GRIP,data=data)
+```
 
+In this data with SIMS vs. GRIP the value of 0.6398 is smaller than the value given for SIMS vs. ARM which is 0.6860. This means that the correlation between sims vs grip is less correlated than that of sims vs arms. Sims vs arms is doing a better job at predicting compared to sims vs grip.
 
 
 
