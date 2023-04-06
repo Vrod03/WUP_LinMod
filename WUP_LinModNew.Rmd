@@ -122,7 +122,11 @@ This data tells us that the equation for the best fit line of SIMS = 0.045463 x 
 
 #### predict model.2 at target point
 
+```{r}
+predict(model.2, tgtpoint, interval= c("prediction"))
+```
 
+This data shows that the predicted target plot is -0.5361 and 95% of the time the given value will between -3.1079 and 2.03565.
 
 
 #### now add the model fit to our plot for model.2
