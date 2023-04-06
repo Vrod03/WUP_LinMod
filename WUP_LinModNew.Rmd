@@ -163,9 +163,11 @@ This data tells us that the equation of the best fit plane will be SIMS= 0.03731
 
 #### predict model.3 at target point
   
+```{r}
+predict(model.3, tgtpoint, interval= c("prediction"))
+```
 
-
-
+The data above explains that 0.1496 was the target point for SIMS vs ARM+GRIP. 95% interval says that the values will be in between -2.1323 and 2.4316.
 
 
 ## Comparing nested models ANOVA Test
