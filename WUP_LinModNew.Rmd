@@ -67,11 +67,14 @@ summary.lm(model.1)
 
 This is the equation of the line for this data SIMS= 0.054563 x ARM -4.095160. Since we have a positive coefficient the line increases so the plot will move from lower left corner to the up right corner. 
 
-
 #### Predict at target point
 
+```{r}
+tgtpoint=data.frame(ARM=88, GRIP=94)
+predict(model.1, tgtpoint, interval= c("prediction"))
+```
 
-
+This data shows that the predicted target plot is 0.7063 but 95% of the time the given value will be in-between -1.7262 and 3.1389.
 
 
 #### scatterplot with model fit
